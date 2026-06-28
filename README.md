@@ -27,31 +27,31 @@ pip install -r requirements.txt
 3. Execution
 To run the full pipeline, open two separate terminal windows:
 
-Terminal 1 (Computer Vision Detection):
+ Terminal 1 (Computer Vision Detection):
 
-python traffic_detector.py
+ python traffic_detector.py
 
-Terminal 2 (Traffic Logic Controller):
+ Terminal 2 (Traffic Logic Controller):
 
-python traffic_controller.py
+ python traffic_controller.py
 
 4. Optimization Algorithm
-The system computes green light intervals using a linear scale bounded by safety minimums and maximums to prevent starvation on opposite lanes:
+  The system computes green light intervals using a linear scale bounded by safety minimums and maximums to prevent starvation on opposite lanes:
 
 T =max(10,min(10+2.5⋅vehicles,45))
-Base Time: 10 seconds minimum.
+  Base Time: 10 seconds minimum.
 
-Scaling Factor: 2.5 seconds added per detected vehicle.
+ Scaling Factor: 2.5 seconds added per detected vehicle.
 
-Cap ceiling: 45 seconds maximum.
+ Cap ceiling: 45 seconds maximum.
 
 5.Future Enhancements
-Connect the control logic output directly to an Arduino/Raspberry Pi circuit rig using physical LEDs.
+  Connect the control logic output directly to an Arduino/Raspberry Pi circuit rig using physical LEDs.
 
-Train a Reinforcement Learning (Q-learning) agent to orchestrate grid-wide traffic multi-intersections.
+  Train a Reinforcement Learning (Q-learning) agent to orchestrate grid-wide traffic multi-intersections.
 
-Support emergency vehicle override detection (e.g., detecting ambulance sirens/glowing elements).
+  Support emergency vehicle override detection (e.g., detecting ambulance sirens/glowing elements).
 
-Train a Reinforcement Learning (Q-learning) agent to orchestrate grid-wide traffic multi-intersections.
+  Train a Reinforcement Learning (Q-learning) agent to orchestrate grid-wide traffic multi-intersections.
 
-Support emergency vehicle override detection (e.g., detecting ambu
+  Support emergency vehicle override detection (e.g., detecting ambu
