@@ -30,6 +30,7 @@ To run the full pipeline, open two separate terminal windows:
 Terminal 1 (Computer Vision Detection):
 
 python traffic_detector.py
+
 Terminal 2 (Traffic Logic Controller):
 
 python traffic_controller.py
